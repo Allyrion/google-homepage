@@ -5,19 +5,43 @@
     </header>
 
     <style>
-        #logo {
+        #main-content {
             position: relative;
-            text-align: center;
-            padding-top: 109px;
+            height: 233px; 
+            margin-top: 89px;
+            padding-bottom: 137px;
         }
+
+        #logo {
+            position:relative;
+            padding-top: 109px 0 30px 0;
+        }
+
+        #search {
+            position: relative;
+            border: 1px solid #dfe1e5;
+            display: flex;
+            height: 44px;
+            width: 482px;
+            border-radius: 30px;
+        }
+
+        
     </style>
     
     <body>
-        <section id="main-content">
+        <center id="main-content">
             <div id="logo">
                 <img id="logo" alt="Google" 
             src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                 />
              </div>
+             <div id="search">
+                 <form>
+                     <label for="googlesearch"></label>
+                     <input type="search" id="search">
+                 </form>
+             </div>
+            </center>
     </body>
 </html>
