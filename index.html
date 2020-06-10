@@ -5,6 +5,54 @@
     </header>
 
     <style>
+        #nav-top {
+            display: inline-block;
+            line-height: 28px;
+            text-align: right;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            top: 16px;
+            color: black;
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-end;
+            grid-column-gap: 10px;
+        }
+
+        .gmail {
+            color: black;
+            text-decoration: none;
+        }
+
+        .gmail:hover {
+            opacity:.85;
+            text-decoration:underline
+        }
+
+        .images {
+            color: black;
+            text-decoration: none;
+        }
+
+        .apps {
+            background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+            background-position: -132px -38px;
+            background-size: 528px 68px;
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+        }
+
+        .login {
+            color: #fff;
+            font-weight: bold;
+            border: 1px solid #4285f4;
+            background: #4285f4;
+            display: inline-block;
+            line-height: 28px;
+            padding: 0 12px;
+        }
+
         #main-content {
             position: relative;
             height: 233px; 
@@ -12,36 +60,68 @@
             padding-bottom: 137px;
         }
 
-        #logo {
-            position:relative;
-            padding-top: 109px 0 30px 0;
+        #logo-area {
+            height:233px;
+            margin-top:89px;
+            padding-top: 109px;
+}
+        @media only screen and (max-height:768px) {
+            #logo {
+                margin-top:47px
+                }
+        }
+        #searc-area {
+            width: 100%;
+            position: relative;
+            display: flex;
+            top:311px
         }
 
         #search {
             position: relative;
             border: 1px solid #dfe1e5;
-            display: flex;
             height: 44px;
-            width: 482px;
+            width: 582px;
             border-radius: 30px;
+            padding-top: 6px;
+            
         }
 
+        #search:hover {
+            box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
+            border-color:rgba(223,225,229,0)
+        }
+        
+        @media only screen and (max-height:768px) {
+            .hp #search-area {
+            top:269px
+            }
         
     </style>
     
     <body>
+        <div id="nav-top" >
+            <a class="gmail" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+            <a class="images" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+            <a class="apps" href="https://www.google.com/intl/en/about/products?tab=wh" title="Google apps" role="button" tabindex="0"></a>
+            <a class="login" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/webhp%3Fhl%3Den%26sa%3DX%26ved%3D0ahUKEwjp_N3zwPLpAhXFmuAKHYllDYEQPAgH" target="_top">Sign in</a>
+        </div>
         <center id="main-content">
-            <div id="logo">
+            <div id="logo-area">
                 <img id="logo" alt="Google" 
             src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                 />
              </div>
-             <div id="search">
+
+             <div id="search-area">
+
+                <div id="search-bar">
                  <form>
                      <label for="googlesearch"></label>
                      <input type="search" id="search">
                  </form>
-             </div>
+                </div>
+            </div>
             </center>
     </body>
 </html>
