@@ -3,8 +3,9 @@
     <header>
         <title>Google</title>
     </header>
-
+    <link href="all.css" rel="stylesheet">
     <style>
+       
        #nav-top {
             position: relative;
             top: 16px;
@@ -100,12 +101,16 @@
             width: 582px;
             border-radius: 30px;
             padding-top: 6px;
-            
         }
 
         #search:hover {
             box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
             border-color:rgba(223,225,229,0)
+        }
+
+        .fa fasearch fa-2 {
+            position: absolute;
+            display: inline-block;
         }
 
         input[type="submit"] {
@@ -134,7 +139,8 @@
   
         
     </style>
-    
+
+
     <body>
         <div id="nav-top" >
             <a class="gmail" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
@@ -151,15 +157,24 @@
              <div id="search-area">
 
                 <div id="search-bar">
+                    <i class="fa fa-search fa-2" aria-hidden="true"></i>
                  <form>
                      <label for="googlesearch"></label>
-                     <input type="search" id="search">
+                     <input type="search" id="search">                    
                  </form>
-                 <div id="submit-area" >
+
+                    <div id="submit-area" >
                         <input class="search-button" aria-label="Google Search" type="submit" value="Google Search">
                         <input class="feeling-lucky" aria-label="I'm Feeling Lucky" type="submit" value="I'm Feeling Lucky">
-                
-                </div>
+                    </div>
+                    
+                    <div id="lang">
+                        Google offered in: 
+                        <a href="https://www.google.com/setprefs?sig=0_bjXHyzZhlCIIk6sbGrr0eSdj9pw%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiwjpz18PfpAhVmSDABHWYrBtcQ2ZgBCA4">हिन्दी</a>
+                        <a href="https://www.google.com/setprefs?sig=0_bjXHyzZhlCIIk6sbGrr0eSdj9pw%3D&amp;hl=fr&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiwjpz18PfpAhVmSDABHWYrBtcQ2ZgBCA8">Français</a>
+                        <a href="https://www.google.com/setprefs?sig=0_bjXHyzZhlCIIk6sbGrr0eSdj9pw%3D&amp;hl=es-419&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiwjpz18PfpAhVmSDABHWYrBtcQ2ZgBCBA">Español (Latinoamérica)</a>
+                        <a href="https://www.google.com/setprefs?sig=0_bjXHyzZhlCIIk6sbGrr0eSdj9pw%3D&amp;hl=zh-TW&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiwjpz18PfpAhVmSDABHWYrBtcQ2ZgBCBE">中文（繁體）</a>
+                    </div>
             </div>
             </center>
     </body>
