@@ -5,7 +5,7 @@
     </header>
 
     <style>
-        #nav-top {
+       #nav-top {
             position: relative;
             top: 16px;
             display: inline-block;
@@ -57,27 +57,40 @@
         }
 
         #main-content {
-            position: relative;
+            position: flex;
             height: 233px; 
-            margin-top: 89px;
             padding-bottom: 137px;
+            
         }
 
         #logo-area {
             height:233px;
             margin-top:89px;
-            padding-top: 109px;
-}
+            padding-top: 109;
+        }
+
+
+        #logo {
+            margin-top:89px;
+            height: 92px;
+            width: 272px;
+        }
+            
+
         @media only screen and (max-height:768px) {
-            #logo {
-                margin-top:47px
+             #logo  {
+                margin-top:47px;
                 }
         }
-        #searc-area {
+
+
+        #search-area {
             width: 100%;
-            position: relative;
+            position: absolute;
             display: flex;
-            top:311px
+            top: 311px;
+            width: 100%;
+            justify-content: center;
         }
 
         #search {
@@ -96,9 +109,27 @@
         }
         
         @media only screen and (max-height:768px) {
-            .hp #search-area {
-            top:269px
+            #search-area {
+            top:269px;
             }
+
+        input[type="submit"] {
+            display: inline-block;
+            background-image:linear-gradient(top,#f5f5f5,#f1f1f1);
+            background-color:#f2f2f2;
+            border:1px solid #f2f2f2;
+            border-radius:4px;
+            color:#5F6368;
+            font-family:arial,sans-serif;
+            font-size:14px;
+            margin:11px 4px;
+            padding:0 16px;
+            line-height:27px;
+            height:36px;
+            min-width:54px;
+            text-align:center;
+            cursor:pointer;
+        }    
         
     </style>
     
@@ -114,7 +145,6 @@
                 <img id="logo" alt="Google" 
             src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                 />
-             </div>
 
              <div id="search-area">
 
@@ -123,6 +153,10 @@
                      <label for="googlesearch"></label>
                      <input type="search" id="search">
                  </form>
+                 <div id="submit-area" >
+                        <input class="search-button" aria-label="Google Search" type="submit" value="Google Search">
+                        <input class="feeling-lucky" aria-label="I'm Feeling Lucky" type="submit" value="I'm Feeling Lucky">
+                
                 </div>
             </div>
             </center>
