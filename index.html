@@ -5,6 +5,10 @@
     </header>
     <link href="all.css" rel="stylesheet">
     <style>
+
+        body {
+            font-family: Arial, sans-serif;
+        }
        
        #nav-top {
             position: relative;
@@ -76,12 +80,20 @@
             height: 92px;
             width: 272px;
         }
-            
 
-        @media only screen and (max-height:768px) {
-             #logo  {
-                margin-top:47px;
-                }
+        #lang {
+            display:inline-block;
+            line-height: 28px;
+            font-size: small;      
+        }
+
+        a {
+            padding: 0 3px;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
         }
 
 
@@ -110,7 +122,7 @@
 
         .fa fasearch fa-2 {
             position: absolute;
-            display: inline-block;
+            display: inline-block;     
         }
 
         input[type="submit"] {
@@ -130,10 +142,20 @@
             text-align:center;
             cursor:pointer;
         }  
+
+        #submit-area {
+            padding: 18px;
+        }
         
         @media only screen and (max-height:768px) {
             #search-area {
             top:269px;
+            }
+
+            @media only screen and (max-height:768px) {
+             #logo  {
+                margin-top:47px;
+                }
             }
 
   
