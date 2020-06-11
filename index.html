@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
         <title>Google</title>
-    </header>
-    <link href="all.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <link href="all.css" rel="stylesheet">
+    </head>
     <style>
 
         body {
@@ -141,7 +142,15 @@
             min-width:54px;
             text-align:center;
             cursor:pointer;
-        }  
+        }
+        
+        input[type="submit"]:hover {
+            box-shadow:0 1px 1px rgba(0,0,0,0.1);
+            background-image:linear-gradient(top,#f8f8f8,#f1f1f1);
+            background-color:#f8f8f8;
+            border:1px solid #c6c6c6;
+            color:#222
+        }
 
         #submit-area {
             padding: 18px;
