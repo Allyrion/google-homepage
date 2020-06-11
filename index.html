@@ -4,6 +4,7 @@
         <title>Google</title>
         <meta charset="UTF-8">
         <link href="all.css" rel="stylesheet">
+        <link href="fontawesome.css" rel="stylesheet">
     </head>
     <style>
 
@@ -121,10 +122,18 @@
             border-color:rgba(223,225,229,0)
         }
 
-        .fa fasearch fa-2 {
-            position: absolute;
-            display: inline-block;     
-        }
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            }
+
+            .fa-search::before {
+                content: "\f002";
+            }
 
         input[type="submit"] {
             display: inline-block;
@@ -188,10 +197,13 @@
              <div id="search-area">
 
                 <div id="search-bar">
-                    <i class="fa fa-search fa-2" aria-hidden="true"></i>
+                    
                  <form>
+                    <i class="fa fa-search fa-2" aria-hidden="false">
+                        ::before </i>    
                      <label for="googlesearch"></label>
-                     <input type="search" id="search">                    
+                     <input type="search" id="search">
+                                     
                  </form>
 
                     <div id="submit-area" >
