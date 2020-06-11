@@ -3,8 +3,10 @@
     <head>
         <title>Google</title>
         <meta charset="UTF-8">
-        <link href="all.css" rel="stylesheet">
-        <link href="fontawesome.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+            rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    </head>
     </head>
     <style>
 
@@ -166,19 +168,16 @@
         }
         
         @media only screen and (max-height:768px) {
-            #search-area {
-            top:269px;
+        #search-area {
+            top: 269px;
+        }
+        @media only screen and (max-height:768px) {
+            #logo {
+                margin-top: 47px;
             }
-
-            @media only screen and (max-height:768px) {
-             #logo  {
-                margin-top:47px;
-                }
-            }
-
-  
-        
-    </style>
+        }
+    }
+</style>
 
 
     <body>
@@ -198,13 +197,11 @@
 
                 <div id="search-bar">
                     
-                 <form>
-                    <i class="fa fa-search fa-2" aria-hidden="false">
-                        ::before </i>    
-                     <label for="googlesearch"></label>
-                     <input type="search" id="search">
-                                     
-                 </form>
+                    <form>
+                        <i class="fa fa-search fa-2" aria-hidden="false"></i>
+                        <label for="googlesearch"></label>
+                        <input type="search" id="search">
+                    </form>
 
                     <div id="submit-area" >
                         <input class="search-button" aria-label="Google Search" type="submit" value="Google Search">
