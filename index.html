@@ -115,8 +115,10 @@
             border: 1px solid #dfe1e5;
             height: 44px;
             width: 582px;
+            margin-top: 10px;
             border-radius: 30px;
             padding-top: 6px;
+            padding-left: 50px;
         }
 
         #search:hover {
@@ -125,16 +127,25 @@
         }
 
         .fa {
-            display: inline-block;
+            display: flex;
             font: normal normal normal 14px/1 FontAwesome;
             font-size: inherit;
             text-rendering: auto;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            place-self: flex-start;
+            margin-top: -50px;
+            margin-left: 20px;
             }
 
             .fa-search::before {
                 content: "\f002";
+                font-size: 1.5em;     
+            }
+
+            #search-bar {
+                display: inline-block;
             }
 
         input[type="submit"] {
@@ -195,19 +206,18 @@
 
              <div id="search-area">
 
-                <div id="search-bar">
-                    
+                <div id="main-input">
+                    <div id="search-bar">
                     <form>
-                        <i class="fa fa-search fa-2" aria-hidden="false"></i>
                         <label for="googlesearch"></label>
-                        <input type="search" id="search">
+                        <input type="search" id="search"><i class="fa fa-search fa-2" aria-hidden="false"></i></input>
                     </form>
-
+                    </div>
                     <div id="submit-area" >
                         <input class="search-button" aria-label="Google Search" type="submit" value="Google Search">
                         <input class="feeling-lucky" aria-label="I'm Feeling Lucky" type="submit" value="I'm Feeling Lucky">
                     </div>
-                    
+                
                     <div id="lang">
                         Google offered in: 
                         <a href="https://www.google.com/setprefs?sig=0_bjXHyzZhlCIIk6sbGrr0eSdj9pw%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiwjpz18PfpAhVmSDABHWYrBtcQ2ZgBCA4">हिन्दी</a>
@@ -215,7 +225,7 @@
                         <a href="https://www.google.com/setprefs?sig=0_bjXHyzZhlCIIk6sbGrr0eSdj9pw%3D&amp;hl=es-419&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiwjpz18PfpAhVmSDABHWYrBtcQ2ZgBCBA">Español (Latinoamérica)</a>
                         <a href="https://www.google.com/setprefs?sig=0_bjXHyzZhlCIIk6sbGrr0eSdj9pw%3D&amp;hl=zh-TW&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiwjpz18PfpAhVmSDABHWYrBtcQ2ZgBCBE">中文（繁體）</a>
                     </div>
-            </div>
+                </div>
             </center>
     </body>
 </html>
